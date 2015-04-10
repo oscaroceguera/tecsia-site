@@ -49,8 +49,7 @@ a
 
 .nav	
 	&__container
-		border 1px solid black
-		font-size 4em
+		display none
 	&__menu
 		align-items center
 		display flex
@@ -64,10 +63,14 @@ a
 					display block
 				.nav__menu__items--aicon
 					display none
+			&--aicon
+				font-size 4em 
 			&--atxt 
 				color white
 				display none
-				font-size 1.2rem
+				font-size .9rem
+				padding 2em .5em
+				border-radius 50%
 			&--atxt[data-items="azul_A"]
 				background-color azul_A
 			&--atxt[data-items="rosa_A"]
