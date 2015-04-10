@@ -2,6 +2,8 @@
 @import 'normalize'
 @import 'iconfonts'
 
+vendor-prefixes = webkit o ms moz official
+
 amarillo_A = #f1da00
 azul_A = #71c7db
 gris_A = #e6e6e6
@@ -65,12 +67,14 @@ a
 					display none
 			&--aicon
 				font-size 4em 
+				cursor pointer
 			&--atxt 
+				border-radius 50%
 				color white
 				display none
 				font-size .9rem
+				opacity .7
 				padding 2em .5em
-				border-radius 50%
 			&--atxt[data-items="azul_A"]
 				background-color azul_A
 			&--atxt[data-items="rosa_A"]
