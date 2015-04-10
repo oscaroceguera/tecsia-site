@@ -1,0 +1,109 @@
+@import "nib"
+@import 'normalize'
+@import 'iconfonts'
+
+amarillo_A = #f1da00
+azul_A = #71c7db
+gris_A = #e6e6e6
+gris_B = #7d7d7d
+gris_C = #656565
+naranja_A = #f49839
+rosa_A = #e73969
+verde_A = #acc90e
+
+	
+html  
+	font-family Helvetica,sans-serif
+	font-size 80%	
+body
+	background-color gris_A
+a 
+	text-decoration none
+
+.header__top
+	align-items strecth
+	display flex
+	padding 0.5em
+	&--logoTecsia
+		font-size 5em
+	&--h1 
+		color gris_B
+		margin 0
+		font-size 4em
+		font-weight normal
+	&--h1::after 
+		color verde_A
+		content "sia"
+	&--bars
+		flex-grow 1
+		font-size 2em
+		text-align right
+		padding 0.5em
+	&--barsitem 
+		background-color gris_A
+		color gris_B
+		border none
+		border-radius .2rem
+		outline none
+		box-shadow 1px 1px 5px gris_B
+
+.nav	
+	&__container
+		border 1px solid black
+		font-size 4em
+	&__menu
+		align-items center
+		display flex
+		justify-content space-around
+		margin 0
+		padding 0
+		&__items 
+			list-style none
+			&:hover
+				.nav__menu__items--atxt
+					display block
+				.nav__menu__items--aicon
+					display none
+			&--atxt 
+				color white
+				display none
+				font-size 1.2rem
+			&--atxt[data-items="azul_A"]
+				background-color azul_A
+			&--atxt[data-items="rosa_A"]
+				background-color rosa_A
+			&--atxt[data-items="amarillo_A"]
+				background-color amarillo_A
+			&--atxt[data-items="naranja_A"]
+				background-color naranja_A
+				
+// .card[data-city="valencia"] {
+// 		background-image:url(../img/valencia-small.jpg);
+// 		background-size: cover;
+// 	}
+// 	.card[data-city="mv"] {
+// 		background-image:url(../img/valencia-small.jpg);
+// 		background-size: cover;
+// 	}				
+				
+			
+
+.bder
+	border 1px solid black
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
