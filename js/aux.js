@@ -4,6 +4,6 @@ $(function(){
 	$showMenu.on('click', toggleMenu);
 
 	function toggleMenu(){
-		$('.nav__container').toggle()
+		$('.nav').toggle()
 	}
 });

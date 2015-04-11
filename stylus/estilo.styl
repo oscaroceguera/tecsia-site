@@ -22,36 +22,29 @@ body
 a 
 	text-decoration none
 
-.header__top
+.header 
+	display flex
+	flex-wrap wrap
+	align-items center
+	justify-content space-between
+	
+.top
 	align-items strecth
 	display flex
 	padding 0.5em
-	&--logoTecsia
+	width 100%
+	&__logoTecsia
 		font-size 5em
-	&--h1 
+	&__h1 
 		color gris_B
 		margin 0
 		font-size 4em
 		font-weight normal
-	&--h1::after 
+	&__h1::after 
 		color verde_A
 		content "sia"
-	&--bars
-		flex-grow 1
-		font-size 2em
-		text-align right
-		padding 0.5em
-	&--barsitem 
-		background-color gris_A
-		color gris_B
-		border none
-		border-radius .2rem
-		outline none
-		box-shadow 1px 1px 5px gris_B
-
-.nav	
-	&__container
-		display none
+.nav
+	width 100%	
 	&__menu
 		align-items center
 		display flex
@@ -84,32 +77,20 @@ a
 			&--atxt[data-items="naranja_A"]
 				background-color naranja_A
 				
-// .card[data-city="valencia"] {
-// 		background-image:url(../img/valencia-small.jpg);
-// 		background-size: cover;
-// 	}
-// 	.card[data-city="mv"] {
-// 		background-image:url(../img/valencia-small.jpg);
-// 		background-size: cover;
-// 	}				
-				
-			
-
 .bder
 	border 1px solid black
 	
+//lanscape, tabletas portrait
+@media screen and (min-width : 481px)
+	.top 
+		width 30%
+	.nav 
+		width 50%
 
-
-
-
-
-
-
-
-
-
-
-
+//tabletas lanscape, laptops
+@media screen and (min-width : 769px)
+	html 
+		font-size 120%
 
 
 
