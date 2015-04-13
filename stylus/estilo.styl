@@ -6,13 +6,16 @@ vendor-prefixes = webkit o ms moz official
 
 amarillo_A = #f1da00
 azul_A = #71c7db
+azul_fb = #3b5998
+azul_tw = #00aced
 gris_A = #e6e6e6
 gris_B = #7d7d7d
 gris_C = #656565
 naranja_A = #f49839
+rojo_A = #e74c3c
+rojo_B = #c0392b
 rosa_A = #e73969
 verde_A = #acc90e
-
 	
 html  
 	font-family Helvetica,sans-serif
@@ -76,16 +79,90 @@ a
 				background-color amarillo_A
 			&--atxt[data-items="naranja_A"]
 				background-color naranja_A
+.main 
+	padding 1em 2em
+	&__article 
+		margin 1.5em 0
+		&__header--h2
+			color gris_B
+			font-size 2rem
+			margin 0
+		&__p 
+			margin .5em 0
+			color gris_C
+			&__list
+				&--items
+					margin .5em 0
+					color gris_C
+					font-style italic
+.aside
+	padding .5em
+	&__presentacion
+		text-align center
+		&__link
+			background-color rojo_A
+			border-bottom 2px solid rojo_B
+			border-radius 2px
+			box-shadow 0px 0px 5px gray
+			color white
+			padding 1em
+
+.fter
+	margin 1em 2em
+	border-top 1px solid gris_B
+	&__head 
+		&__h2 
+			color verde_A
+			font-weight normal
+			margin 0
+			padding .5em
+			text-align center
+	&__interes
+		&__ul 
+			font-size 2.5em
+			list-style none
+			margin 0
+			padding 0
+			text-align center
+			&__li 
+				margin 0.5em
+				&__a 
+					color gray
+	&__sociales 
+		&__p 
+			color gris_B
+			font-size 1.5rem
+			text-align right
+			&--tw 
+				color azul_tw
+				font-size 1.2em
+			&--fb 
+				color azul_fb
+				font-size 1.2em
+
 				
 .bder
 	border 1px solid black
-	
+
+
 //lanscape, tabletas portrait
 @media screen and (min-width : 481px)
 	.top 
 		width 30%
 	.nav 
 		width 50%
+	.main 
+		&__article
+			margin 1em 7em
+	.fter
+		&__interes
+			&__ul 
+				display flex
+				flex-wrap wrap
+				justify-content center
+			
+			
+			
 
 //tabletas lanscape, laptops
 @media screen and (min-width : 769px)
