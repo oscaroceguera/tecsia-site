@@ -109,9 +109,6 @@ a
 			list-style none
 			margin 0.5em 0
 			padding 0 1em
-			// &:hover 
-			// 	.esquemas__menu--items--nombre--oculto
-			// 		display block
 			&--logo 
 				font-size 4em
 				margin 0
@@ -120,6 +117,7 @@ a
 				margin 0 0 0 1em
 				&--oculto
 					background-color rgba(black,.3)
+					border-radius 4px
 					bottom 0
 					color white
 					display none
@@ -127,7 +125,6 @@ a
 					padding .5em
 					right 0
 					top 0
-					border-radius 4px
 		
 .esquemas__menu--items[data-esquema="senasica"]:hover
 	.senasica
@@ -240,12 +237,19 @@ a
 				justify-content center
 			
 			
-			
-
 //tabletas lanscape, laptops
 @media screen and (min-width : 769px)
 	html 
 		font-size 120%
+		.esquemas
+			&__menu
+				display flex
+				flex-wrap wrap
+				justify-content space-around
+				&--items
+					width 15em
+		
+			
 
 
 
