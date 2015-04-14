@@ -24,6 +24,7 @@ body
 	background-color gris_A
 a 
 	text-decoration none
+	color verde_A
 
 .header 
 	display flex
@@ -92,9 +93,79 @@ a
 			color gris_C
 			&__list
 				&--items
-					margin .5em 0
 					color gris_C
 					font-style italic
+					margin .5em 0
+.esquemas
+	&__menu
+		margin 0
+		padding 0
+		&--items 
+			align-items center
+			border-radius 2px
+			box-shadow 0px 0px 5px gray
+			cursor pointer
+			display flex
+			list-style none
+			margin 0.5em 0
+			padding 0 1em
+			// &:hover 
+			// 	.esquemas__menu--items--nombre--oculto
+			// 		display block
+			&--logo 
+				font-size 4em
+				margin 0
+			&--nombre 
+				color verde_A
+				margin 0 0 0 1em
+				&--oculto
+					background-color rgba(black,.3)
+					bottom 0
+					color white
+					display none
+					left 0
+					padding .5em
+					right 0
+					top 0
+					border-radius 4px
+		
+.esquemas__menu--items[data-esquema="senasica"]:hover
+	.senasica
+		display block	
+.esquemas__menu--items[data-esquema="usda"]:hover
+	.usda
+		display block
+.esquemas__menu--items[data-esquema="global"]:hover
+	.global
+		display block
+.esquemas__menu--items[data-esquema="haccp"]:hover
+	.haccp
+		display block
+.esquemas__menu--items[data-esquema="primus"]:hover
+	.primus
+		display block					
+.esquemas__menu--items[data-esquema="ctpat"]:hover
+	.ctpat
+		display block
+.esquemas__menu--items[data-esquema="bpa"]:hover
+	.bpa
+		display block
+.esquemas__menu--items[data-esquema="buma"]:hover
+	.buma
+		display block	
+.esquemas__menu--items[data-esquema="bpm"]:hover
+	.bpm
+		display block	
+.esquemas__menu--items[data-esquema="stps"]:hover
+	.stps
+		display block
+.esquemas__menu--items[data-esquema="scs"]:hover
+	.scs
+		display block
+.esquemas__menu--items[data-esquema="lgpgir"]:hover
+	.lgpgir
+		display block
+
 .aside
 	padding .5em
 	&__presentacion
@@ -140,9 +211,16 @@ a
 				color azul_fb
 				font-size 1.2em
 
-				
+.icon-global 
+	color green
+.icon-BUMA
+	color rojo_B				
 .bder
 	border 1px solid black
+.relative 
+	position relative
+.absolute 
+	position absolute
 
 
 //lanscape, tabletas portrait
@@ -153,7 +231,7 @@ a
 		width 50%
 	.main 
 		&__article
-			margin 1em 7em
+			margin 3em 7em
 	.fter
 		&__interes
 			&__ul 
