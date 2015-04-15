@@ -25,6 +25,9 @@ body
 a 
 	text-decoration none
 	color verde_A
+	&:hover 
+		opacity 0.6
+		border-bottom 1px solid gris_C
 
 .header 
 	display flex
@@ -125,6 +128,21 @@ a
 					padding .5em
 					right 0
 					top 0
+
+.clientes
+	&__list
+		display flex 
+		flex-wrap wrap
+		justify-content center
+		margin 0 
+		padding 0
+		&__items
+			list-style none
+			margin 0.5em
+			&__link
+				font-size 80px
+				
+			
 		
 .esquemas__menu--items[data-esquema="senasica"]:hover
 	.senasica
@@ -240,7 +258,7 @@ a
 //tabletas lanscape, laptops
 @media screen and (min-width : 769px)
 	html 
-		font-size 120%
+		font-size 100%
 		.esquemas
 			&__menu
 				display flex
@@ -248,7 +266,9 @@ a
 				justify-content space-around
 				&--items
 					width 15em
-		
+		.clientes__list__items__link
+			font-size 128px
+			
 			
 
 

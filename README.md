@@ -1,3 +1,8 @@
+## V1.3.0 - [Clientes] : [Maquetación Responsiva]
+* **Main** :
+	* Descripcion
+	* Links de logotipos de clientes agregamos triple h
+
 ## V1.2.0 - [Main-Servicios] : [Maquetación Responsiva]
 * **Main** :
 	* Servicios 
