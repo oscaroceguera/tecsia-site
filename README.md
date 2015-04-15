@@ -1,6 +1,10 @@
+## V1.4.0 - [Contacto] : [Maquetación Responsiva]
+* **Main** :
+	* Contacto
+
 ## V1.3.0 - [Clientes] : [Maquetación Responsiva]
 * **Main** :
-	* Descripcion
+	* Descripción
 	* Links de logotipos de clientes agregamos triple h
 
 ## V1.2.0 - [Main-Servicios] : [Maquetación Responsiva]

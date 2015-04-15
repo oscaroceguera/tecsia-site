@@ -99,6 +99,27 @@ a
 					color gris_C
 					font-style italic
 					margin .5em 0
+		&__contacto
+			margin 0
+			text-align center
+			&__info
+				margin 3em 0
+				&--title
+					color verde_A
+					font-size 1.3em
+					font-weight bold
+					margin 0
+				&--desc 
+					color gris_C
+					font-size 1em
+					margin 0.5em
+	
+.mapa 
+	text-align center
+	&__iframe
+		width 250px
+		height 250px
+	
 .esquemas
 	&__menu
 		margin 0
@@ -247,6 +268,14 @@ a
 	.main 
 		&__article
 			margin 3em 7em
+			&__contacto 
+				display flex
+				&__info 
+					width 20em
+	.mapa 
+		&__iframe 
+			width 350px
+			height 350px
 	.fter
 		&__interes
 			&__ul 
@@ -259,6 +288,8 @@ a
 @media screen and (min-width : 769px)
 	html 
 		font-size 100%
+		.main__article__contacto
+			justify-content space-around
 		.esquemas
 			&__menu
 				display flex
