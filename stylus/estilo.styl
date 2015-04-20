@@ -25,10 +25,7 @@ body
 a 
 	text-decoration none
 	color verde_A
-	outline 0
-	&:hover 
-		opacity 0.6
-		border-bottom 1px solid gris_C
+	outline 0	
 
 .header 
 	display flex
@@ -51,8 +48,9 @@ a
 	&__h1::after 
 		color verde_A
 		content "sia"
-.nav
-	width 100%	
+
+.nav 
+	width 100%
 	&__menu
 		align-items center
 		display flex
@@ -61,29 +59,18 @@ a
 		padding 0
 		&__items 
 			list-style none
-			&:hover
-				.nav__menu__items--atxt
-					display block
-				.nav__menu__items--aicon
-					display none
-			&--aicon
-				font-size 4em 
-				cursor pointer
-			&--atxt 
+			&--logo 
+				font-size 4em
+			&--txt 
 				border-radius 50%
 				color white
 				display none
 				font-size .9rem
 				opacity .7
 				padding 2em .5em
-			&--atxt[data-items="azul_A"]
-				background-color azul_A
-			&--atxt[data-items="rosa_A"]
-				background-color rosa_A
-			&--atxt[data-items="amarillo_A"]
-				background-color amarillo_A
-			&--atxt[data-items="naranja_A"]
-				background-color naranja_A
+				
+				
+
 .main 
 	padding 1em 2em
 	&__article 
@@ -286,9 +273,24 @@ a
 			
 			
 //tabletas lanscape, laptops
-@media screen and (min-width : 769px)
+@media screen and (min-width : 1025px)
 	html 
 		font-size 100%
+		.nav__menu__items
+			&:hover 
+				.nav__menu__items--logo 
+					display none
+				.nav__menu__items--txt
+					display block
+			&--txt[data-items="azul_A"]
+				background-color azul_A
+			&--txt[data-items="rosa_A"]
+				background-color rosa_A
+			&--txt[data-items="amarillo_A"]
+				background-color amarillo_A
+			&--txt[data-items="naranja_A"]
+				background-color naranja_A
+				
 		.main__article__contacto
 			justify-content space-around
 		.esquemas
