@@ -1,3 +1,7 @@
+## V1.4.1 - [Esquemas y Capacitación] : [Maquetación Responsiva y Gestos touch]
+* **toggle** - JS para esquemas
+* maquetacion para esquemas y capaciotación
+
 ## V1.4.0 - [Contacto] : [Maquetación Responsiva]
 * **Main** :
 	* Contacto
