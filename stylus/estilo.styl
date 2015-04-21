@@ -16,6 +16,8 @@ rojo_A = #e74c3c
 rojo_B = #c0392b
 rosa_A = #e73969
 verde_A = #acc90e
+verde_B = #1abc9c
+verde_C = #16a085
 	
 html  
 	font-family Helvetica,sans-serif
@@ -68,7 +70,20 @@ a
 				font-size .9rem
 				opacity .7
 				padding 2em .5em
-				
+	
+.lan 
+	padding 0.5em
+	position fixed
+	right .5em
+	text-align right
+	bottom 5em
+	&__link 
+		background-color rgba(verde_B,0.9)
+		color white		
+		padding 1em
+		border-radius 50%
+		box-shadow 0px 2px 10px gray
+		border-bottom: 1px solid verde_C
 				
 
 .main 
@@ -226,6 +241,13 @@ a
 		width 30%
 	.nav 
 		width 50%
+	.lan 
+		bottom initial
+		&__link
+			padding 1.5em
+			transition .3s
+			&:hover 
+				opacity .5
 	.main 
 		&__article
 			margin 3em 7em
