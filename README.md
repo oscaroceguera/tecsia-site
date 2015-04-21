@@ -1,3 +1,5 @@
+## V2.1.0 - [IDIOMA] : [ANGULARJS]
+
 ## V2.0.0 - [Views y Rutas] : [ANGULARJS]
 * [x] Nosotros
 * [x] Servivios
