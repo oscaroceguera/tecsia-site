@@ -1,3 +1,9 @@
+## V2.0.0 - [Views y Rutas] : [ANGULARJS]
+* [x] Nosotros
+* [x] Servivios
+* [x] Clientes 
+* [x] Contacto
+
 ## V1.4.1 - [Esquemas y Capacitación] : [Maquetación Responsiva y Gestos touch]
 * **toggle** - JS para esquemas
 * maquetacion para esquemas y capaciotación
