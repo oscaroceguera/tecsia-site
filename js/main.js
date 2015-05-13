@@ -18,7 +18,7 @@
 					templateUrl: 'views/contacto.html'
 				})
 				.otherwise({
-					redirecTo: '/'
+					redirectTo: '/'
 				});
 		}]);
 
