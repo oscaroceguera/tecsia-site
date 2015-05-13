@@ -1,6 +1,6 @@
 ## V2.2.0 - [Mapa] : [Presentacion en-es]
-* [*] **Mapa** *Abarca lo ancho del navegador*
-* [*] **Presentacion** *Ingles y Español* 
+* [x] **Mapa** *Abarca lo ancho del navegador*
+* [x] **Presentacion** *Ingles y Español* 
 
 ## V2.1.0 - [IDIOMA] : [ANGULARJS]
 
