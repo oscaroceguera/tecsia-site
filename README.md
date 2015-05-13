@@ -1,3 +1,7 @@
+## V2.2.0 - [Mapa] : [Presentacion en-es]
+* [*] **Mapa** *Abarca lo ancho del navegador*
+* [*] **Presentacion** *Ingles y Español* 
+
 ## V2.1.0 - [IDIOMA] : [ANGULARJS]
 
 ## V2.0.0 - [Views y Rutas] : [ANGULARJS]
