@@ -63,14 +63,9 @@ a
 			list-style none
 			&--logo 
 				font-size 4em
-			&--txt 
-				border-radius 50%
-				color white
-				display none
-				font-size .9rem
-				opacity .7
-				padding 2em .5em
-	
+				&:hover 
+					opacity 0.6
+
 .lan 
 	padding 0.5em
 	position fixed
@@ -270,21 +265,8 @@ a
 @media screen and (min-width : 1024px)
 	html 
 		font-size 100%
-		.nav__menu__items
-			&:hover 
-				.nav__menu__items--logo 
-					display none
-				.nav__menu__items--txt
-					display block
-			&--txt[data-items="azul_A"]
-				background-color azul_A
-			&--txt[data-items="rosa_A"]
-				background-color rosa_A
-			&--txt[data-items="amarillo_A"]
-				background-color amarillo_A
-			&--txt[data-items="naranja_A"]
-				background-color naranja_A
-				
+		.nav__menu__items--logo
+			font-size 5.5em
 		.main__article__contacto
 			justify-content space-around
 		.cat

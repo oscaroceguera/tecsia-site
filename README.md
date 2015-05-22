@@ -1,3 +1,7 @@
+## V2.2.1 - [Iconos de nav] - [GMI:Link]
+* [ ] **Iconos de nav** *se cambian por letras*
+* [ ] **GMI** *Link de GMI que redireje a la pagina*
+
 ## V2.2.0 - [Mapa] : [Presentacion en-es]
 * [x] **Mapa** *Abarca lo ancho del navegador*
 * [x] **Presentacion** *Ingles y Español* 
