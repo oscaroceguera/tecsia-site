@@ -1,3 +1,26 @@
-## V3.0.0 
+## V3.0.0
 
-*Estructura jade*
+###Scripts de *npm run* en package.json
+
+~~~
+{
+    "scripts" : {
+        "jade" : "jade --watch --pretty lib/*.jade --out .",
+        "stylus" : "stylus --use nib --compress --watch lib/app.styl --out public/css",
+        "server" : "http-server ."
+    }
+}
+~~~
+
+### Estructura componente 
+Tenemos dos carpetas **lib** y **public**, la cual se usará **stylus y jade** para compilar el html y el css.
+    
+* [x] Header
+    * logo
+    * nav
+* Aside 
+    * link idioma
+* Container **(BackboneJS)**
+* [x] Footer
+    * Links de interes
+    * Sociales      

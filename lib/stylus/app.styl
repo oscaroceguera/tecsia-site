@@ -22,7 +22,9 @@ verde_C = #16a085
 @import 'normalize'
 @import 'iconfonts'
 @import "../header/styles.styl"
+@import "../aside/styles.styl"
 @import "../footer/styles.styl"
+@import "../views/styles.styl"
 
 html  
 	font-family Helvetica,sans-serif
@@ -46,6 +48,16 @@ a
 		display flex
 		flex-wrap wrap
 		justify-content center
+	.Lang 
+		bottom initial
+		&-link
+			padding 1.5em
+			transition .3s
+			&:hover 
+				opacity 0.5
+	.Article 
+		margin 3em 7em
+		
 		
 //tabletas lanscape, laptops
 @media screen and (min-width : 1024px)
