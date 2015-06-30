@@ -20,7 +20,11 @@ Tenemos dos carpetas **lib** y **public**, la cual se usará **stylus y jade** p
     * nav
 * Aside 
     * link idioma
-* Container **(BackboneJS)**
+* Container **(angularJS)**
 * [x] Footer
     * Links de interes
     * Sociales      
+
+### Usamos Browserify y Gulp
+
+### Site  en Ingles y Español

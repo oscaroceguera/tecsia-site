@@ -57,7 +57,20 @@ a
 				opacity 0.5
 	.Article 
 		margin 3em 7em
-		
+		&-contacto
+			display flex
+			justify-content center
+	.Contacto 
+		width 20em
+	.Clientes 
+		align-items center
+		flex-direction row
+		justify-content space-around
+	
+	.Mapa 
+		&-frame 
+			width 100%
+	
 		
 //tabletas lanscape, laptops
 @media screen and (min-width : 1024px)
@@ -65,3 +78,19 @@ a
 		font-size 100%
 	body 
 		margin 0 5em 
+	.Article
+		&-Esquemas
+		&-capacitacion
+			display flex
+			flex-wrap wrap
+			justify-content space-around
+	.Esquemas-items
+	.Capacitacion-items
+		margin .5em
+		width 15em
+	.Clientes-items
+		&_links
+			font-size 2em
+		&:hover 
+			font-size 1.1em
+		

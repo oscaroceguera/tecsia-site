@@ -27,7 +27,7 @@ path.watch = {
 	stylus :['./lib/stylus/app.styl'] ,
 	fonts : ['./lib/iconfonts/**'],
 	js : ['./lib/js/main.js'],
-	jadeviews : ['./lib/views/**/*.jade'],
+	jadeviews : ['./lib/views/*/*.jade'],
 	pdf : ['./lib/pdf/*.pdf']
 }
 
@@ -63,7 +63,7 @@ gulp.task('templates', function(){
 
 // Template Views
 gulp.task('templatesViews', function(){
-	return gulp.src('./lib/views/**/*.jade') // Punto de entrada
+	return gulp.src('./lib/views/*/*.jade') // Punto de entrada
 		.pipe(jade())
 		.pipe(minifyHTML())
 		.pipe(gulp.dest('./public/views')) // Ubicacion del destino del archivo
