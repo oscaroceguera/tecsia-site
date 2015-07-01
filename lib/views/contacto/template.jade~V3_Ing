@@ -1,0 +1,8 @@
+main.Main
+	article.Article  
+		header.Article-titulo 
+			h2.Article-titulo_h2 Contact information
+		.Article-contacto
+			include ./info/template.jade
+.Mapa
+	iframe.Mapa-frame(frameborder="0", src="https://maps.google.com/maps?f=q&source=s_q&hl=en&q=Doctor+EMIGDIO+FLORES+S.+770,+Chapultepec,+80040+Culiacan+Rosales,+Sinaloa,+Mexico&aq=&sll=37.0625,-95.677068&sspn=36.094886,86.572266&t=h&ie=UTF8&geocode=FdW3egEdnGWZ-Q&split=0&hq=&hnear=Doctor+EMIGDIO+FLORES+S.+770,+Culiacan+Rosales,+Sinaloa,+Mexico&ll=24.820432,-107.387495&spn=0.013633,0.018239&z=15&output=embed")
