@@ -1,0 +1,96 @@
+bder(color = red)
+	border 1px solid color 
+	box-sizing border-box
+
+amarillo_A = #f1da00
+azul_A = #71c7db
+azul_fb = #3b5998
+azul_tw = #00aced
+gris_A = #e6e6e6
+gris_B = #7d7d7d
+gris_C = #656565
+gris_D = #5E5E5E
+naranja_A = #f49839
+rojo_A = #e74c3c
+rojo_B = #c0392b
+rosa_A = #e73969
+verde_A = #acc90e
+verde_B = #1abc9c
+verde_C = #16a085
+
+@import "nib"
+@import 'normalize'
+@import 'iconfonts'
+@import "../header/styles.styl"
+@import "../aside/styles.styl"
+@import "../footer/styles.styl"
+@import "../views/styles.styl"
+
+html  
+	font-family Helvetica,sans-serif
+	font-size 80%	
+	
+body
+	background-color gris_A
+a 
+	color verde_A
+	outline 0	
+	text-decoration none
+	
+//lanscape, tabletas portrait
+@media screen and (min-width : 481px)
+	.Header-logo
+		width 30%
+	.Nav 
+		width 50vw
+	.Interes
+		align-items center
+		display flex
+		flex-wrap wrap
+		justify-content center
+	.Lang 
+		bottom initial
+		&-link
+			padding 1.5em
+			transition .3s
+			&:hover 
+				opacity 0.5
+	.Article 
+		margin 3em 7em
+		&-contacto
+			display flex
+			justify-content center
+	.Contacto 
+		width 20em
+	.Clientes 
+		align-items center
+		flex-direction row
+		justify-content space-around
+	
+	.Mapa 
+		&-frame 
+			width 100%
+	
+		
+//tabletas lanscape, laptops
+@media screen and (min-width : 1024px)
+	html 
+		font-size 100%
+	body 
+		margin 0 5em 
+	.Article
+		&-Esquemas
+		&-capacitacion
+			display flex
+			flex-wrap wrap
+			justify-content space-around
+	.Esquemas-items
+	.Capacitacion-items
+		margin .5em
+		width 15em
+	.Clientes-items
+		&_links
+			font-size 2em
+		&:hover 
+			font-size 1.1em
+		
